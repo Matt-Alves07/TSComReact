@@ -4,7 +4,7 @@ import './App.css';
 //Components
 import FirstComponent from './Components/FirstComponent';
 import SecondComponent from './Components/SecondComponent';
-import Destructuring from './Components/Destructuring';
+import Destructuring, { Category } from './Components/Destructuring';
 import State from './Components/State';
 
 function App() {
@@ -33,6 +33,7 @@ function App() {
         content="Some content"
         commentsQty={10}
         tags={["ts","react","first-project","example"]}
+        category={Category.TS}
       />
       <State/>
     </div>

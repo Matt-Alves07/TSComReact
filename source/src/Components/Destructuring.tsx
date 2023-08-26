@@ -5,12 +5,21 @@ interface IDestructuringProps {
     content: string
     commentsQty: number
     tags: string[]
+    //ENUM
+    category: Category
+}
+
+export enum Category {
+  JS = "JavaScript",
+  TS = "TypeScript",
+  CS = "C#",
+  PY = "Python"
 }
 
 //Old format
 //const Destructuring = (props: IDestructuringProps) => {
 //Destructuring example
-const Destructuring = ({ title, content, commentsQty, tags } : IDestructuringProps) => {
+const Destructuring = ({ title, content, commentsQty, tags, category } : IDestructuringProps) => {
   return (
     <div>
         <h2>{title}</h2>
@@ -21,6 +30,7 @@ const Destructuring = ({ title, content, commentsQty, tags } : IDestructuringPro
                 <span>#{tag + " "}</span>
             ))}
         </div>
+        <h4>Category: {category}</h4>
     </div>
   );
 };
