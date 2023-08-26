@@ -5,6 +5,7 @@ import './App.css';
 import FirstComponent from './Components/FirstComponent';
 import SecondComponent from './Components/SecondComponent';
 import Destructuring from './Components/Destructuring';
+import State from './Components/State';
 
 function App() {
   //Variaveis
@@ -33,6 +34,7 @@ function App() {
         commentsQty={10}
         tags={["ts","react","first-project","example"]}
       />
+      <State/>
     </div>
   );
 }
