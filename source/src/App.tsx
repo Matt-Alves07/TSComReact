@@ -3,6 +3,8 @@ import './App.css';
 
 //Components
 import FirstComponent from './Components/FirstComponent';
+import SecondComponent from './Components/SecondComponent';
+import Destructuring from './Components/Destructuring';
 
 function App() {
   //Variaveis
@@ -24,6 +26,13 @@ function App() {
       <h3>{userGreeting(name)}</h3>
 
       <FirstComponent/>
+      <SecondComponent name="Test"/>
+      <Destructuring
+        title="First post"
+        content="Some content"
+        commentsQty={10}
+        tags={["ts","react","first-project","example"]}
+      />
     </div>
   );
 }
